@@ -17,12 +17,12 @@ func AnagramSolution3(s1 string, s2 string) bool {
 
 	for _, w1 := range s1 {
 		pos := int(w1) - int('a')
-		c1[pos] = 1
+		c1[pos] = c1[pos] + 1
 	}
 
 	for _, w2 := range s2 {
 		pos := int(w2) - int('a')
-		c2[pos] = 1
+		c2[pos] = c2[pos] + 1
 	}
 
 	j := 0
